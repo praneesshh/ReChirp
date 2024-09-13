@@ -11,38 +11,53 @@ export default function SignUp() {
           resizeMode="contain" 
           source={rechirp} 
           alt="Rechirp Logo"
-          mb={8} // Adjust the size as needed
+          mb={'16'} 
         />
-        <Text fontSize="4xl" fontWeight="bold" mb={4}>Sign Up</Text>
+        <Box backgroundColor="orange.200" padding="16" alignItems="center" borderRadius="3xl" borderColor="orange.100" borderWidth="4">
+        <Text fontSize="4xl" fontWeight="bold" mb={6}>Welcome Aboard</Text>
         <Input 
           mx="3" 
-          borderRadius="lg" 
-          size="2xl" 
-          mb={4} 
+          borderRadius="3xl" 
+          size="3xl" 
+          mb={10} 
           placeholder="User Name" 
-          w="80%" 
+          bgColor="white"
+          w="100%" 
+          h="15%"
         />
         <Input 
           mx="3" 
-          borderRadius="lg" 
-          size="2xl" 
-          mb={4} 
-          placeholder="Email" 
-          w="80%" 
-        />
-        <Input 
-          mx="3" 
-          borderRadius="lg" 
-          size="2xl" 
-          mb={4} 
+          borderRadius="3xl"
+          size="3xl" 
+          mb={10} 
           placeholder="Password" 
           type='password' 
-          w="80%" 
+          bgColor="white"
+          h="15%"
+          w="100%" 
         />
-        <VStack space={4} alignItems="center" w="80%">
-          <Button size="lg"  borderRadius="lg"  width="full" mb='4'>SIGN-UP</Button>
-        </VStack>
-        <a mt={2} href=''>Already a user? SignIn</a>
+         <Input 
+          mx="3" 
+          borderRadius="3xl"
+          size="3xl" 
+          mb={10} 
+          placeholder="Confirm Password" 
+          type='password' 
+          h="15%"
+          bgColor="white"
+          w="100%" 
+        />
+        <Text>By proceeding with the app, you agree with our Terms and Conditions</Text>
+        <Button>Terms Of Service</Button>
+      <VStack space={6} mt="10" alignItems="center" w="20%">
+  <Button size="lg" borderRadius="3xl" px="10" bg="green.600" color="white">
+    Register
+  </Button>
+</VStack>
+
+        <Text fontSize="2xl" my={4}>Forgot Password?</Text>
+        <a href=''>Already user? Sign in</a>
+        </Box>
       </Box>
     </NativeBaseProvider>
   );

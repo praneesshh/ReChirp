@@ -7,8 +7,8 @@ const Layout = () => {
   return (
     <View>
       {/* <Header /> */}
-      <SignIn />
-      {/* <SignUp /> */}
+      {/* <SignIn /> */}
+      <SignUp />
       {/* <TermsOfService /> */}
     </View>
   );
